@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreWPF", "ExploreWPF\ExploreWPF.csproj", "{A5D79E34-52A0-4BA2-805A-3747EAC008EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDealership", "CarDealership\CarDealership.csproj", "{ED231AC2-6259-477D-A395-C631A0207A99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5D79E34-52A0-4BA2-805A-3747EAC008EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D79E34-52A0-4BA2-805A-3747EAC008EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D79E34-52A0-4BA2-805A-3747EAC008EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D79E34-52A0-4BA2-805A-3747EAC008EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED231AC2-6259-477D-A395-C631A0207A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED231AC2-6259-477D-A395-C631A0207A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED231AC2-6259-477D-A395-C631A0207A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED231AC2-6259-477D-A395-C631A0207A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F456C66-065B-4303-8617-B7F0E077B172}
+	EndGlobalSection
+EndGlobal

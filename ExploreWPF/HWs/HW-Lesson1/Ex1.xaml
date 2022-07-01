@@ -1,0 +1,33 @@
+﻿<Window x:Class="ExploreWPF.HWs.HW_Ex1_Lesson1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExploreWPF.HWs"
+        mc:Ignorable="d"
+        Title="HW_Ex1_Lesson1" Height="350" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel x:Name="WrapPanel" Grid.ColumnSpan="2" ItemHeight="30">
+            <Button Margin="2" x:Name="ButtonRed" Content="Red" Foreground="Red"/>
+            <Button Margin="2" x:Name="ButtonAqua" Content="Aqua" Foreground="Aqua"/>
+            <Button Margin="2" x:Name="ButtonBlack" Content="Black" Foreground="Black"/>
+            <Button Margin="2"  x:Name="ButtonBlueViolet" Content="BlueViolet" Foreground="BlueViolet"/>
+            <Button Margin="2" x:Name="ButtonChartreuse" Content="Chartreuse" Foreground="Chartreuse"/>
+            <Button Margin="2" x:Name="ButtonCyan" Content="Cyan" Foreground="Cyan"/>
+            <Button Margin="2" x:Name="ButtonIndigo" Content="Indigo" Foreground="Indigo"/>
+            <Button Margin="2" x:Name="ButtonLightPink" Content="LightPink" Foreground="LightPink"/>
+            <Button Margin="2" x:Name="ButtonNavy" Content="Navy" Foreground="Navy"/>
+            <Button Margin="2" x:Name="ButtonYellow" Content="Yellow" Foreground="Yellow"/>
+            <Button Margin="2" x:Name="ButtonGreen" Content="Green" Foreground="Green"/>
+            <Button Margin="2" x:Name="ButtonMaroon" Content="Maroon" Foreground="Maroon"/>
+            <Button Margin="2" x:Name="ButtonSilver" Content="Silver" Foreground="Silver"/>
+            <Button Margin="2" x:Name="ButtonWhite" Content="White" Foreground="White"/>
+            <Button Margin="2" x:Name="ButtonFuchsia" Content="Fuchsia" Foreground="Fuchsia"/>
+        </WrapPanel>
+    </Grid>
+</Window>
