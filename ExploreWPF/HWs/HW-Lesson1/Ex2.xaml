@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ExploreWPF.HWs.HW_Lesson1"
         mc:Ignorable="d"
         Title="Calculator" WindowStyle="ThreeDBorderWindow"
-        Height="480" Width="505" MinHeight="350" MinWidth="200"
+        Height="480" Width="300" MinHeight="350" MinWidth="200"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
