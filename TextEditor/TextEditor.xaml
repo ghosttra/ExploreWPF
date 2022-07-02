@@ -1,0 +1,38 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditor"
+        mc:Ignorable="d"
+        Title="Text Editor" Height="450" Width="800" MinHeight="200" MinWidth="300" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Menu x:Name="stripMenu" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Menu.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="200"></Setter>
+                </Style>
+            </Menu.Resources>
+
+            <MenuItem x:Name ="menuStripItemFile" Header="File">
+                <Button Content="Open" Click="OpenFileBtn"/>
+                <Button Content="Save" Click = "SaveFileBtn"/>
+            </MenuItem>
+
+            <MenuItem x:Name ="menuStripItemText" Header="Text">
+                <Button Content="Copy" Click = "CopyTextBtn"/>
+                <Button Content="Cut" Click = "CutTextBtn"/>
+                <Button Content="Paste" Click = "PasteTextBtn"/>
+            </MenuItem>
+        </Menu>
+
+        <Border Margin="3" Grid.Row="1" CornerRadius="5" BorderBrush="Green" BorderThickness="2">
+            <TextBox BorderThickness="0" Margin="1" x:Name="textBox" AcceptsReturn ="True" TextWrapping = "Wrap"/>
+        </Border>
+    </Grid>
+</Window>
