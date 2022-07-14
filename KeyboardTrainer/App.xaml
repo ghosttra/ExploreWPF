@@ -1,8 +1,8 @@
-﻿<Application x:Class="ExploreWPF.App"
+﻿<Application x:Class="KeyboardTrainer.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ExploreWPF"
-             StartupUri="CWs/Lesson_12.07.2022.xaml">
+             xmlns:local="clr-namespace:KeyboardTrainer"
+             StartupUri="KeyboardTrainer.xaml">
     <Application.Resources>
          
     </Application.Resources>

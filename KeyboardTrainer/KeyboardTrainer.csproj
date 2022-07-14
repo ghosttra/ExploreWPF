@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A5D79E34-52A0-4BA2-805A-3747EAC008EC}</ProjectGuid>
+    <ProjectGuid>{5552B749-4C82-48CD-875B-2B3257DF89E7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ExploreWPF</RootNamespace>
-    <AssemblyName>ExploreWPF</AssemblyName>
+    <RootNamespace>KeyboardTrainer</RootNamespace>
+    <AssemblyName>KeyboardTrainer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -28,15 +28,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,27 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CWs\EditRecipe.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CWs\Ex1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CWs\GetReceipt.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CWs\lesson4.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CWs\Lesson_12.07.2022.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CWs\MainWindow.xaml">
+    <Page Include="KeyboardTrainer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -88,41 +64,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CWs\EditRecipe.xaml.cs">
-      <DependentUpon>EditRecipe.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CWs\Ex1.xaml.cs">
-      <DependentUpon>Ex1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CWs\GetReceipt.xaml.cs">
-      <DependentUpon>GetReceipt.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CWs\lesson4.xaml.cs">
-      <DependentUpon>lesson4.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CWs\Lesson_12.07.2022.xaml.cs">
-      <DependentUpon>Lesson_12.07.2022.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CWs\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="KeyboardTrainer.xaml.cs">
+      <DependentUpon>KeyboardTrainer.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="HWs\HW-Lesson1\Ex1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="HWs\HW-Lesson1\Ex2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HWs\HW-Lesson1\Ex1.xaml.cs">
-      <DependentUpon>Ex1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="HWs\HW-Lesson1\Ex2.xaml.cs">
-      <DependentUpon>Ex2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -149,11 +96,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="HWs\HW-Lesson1\calculatorIcon.ico" />
+    <None Include="Resources\windows-11-icon-logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="calculatorIcon.ico" />
+    <Resource Include="windows-11-icon-logo.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
